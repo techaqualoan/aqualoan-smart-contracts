@@ -1,0 +1,252 @@
+deploying "PoolAddressesProviderRegistry" (tx: 0x839b4f19af63a5af642e824384e09394648fd192577da1fec88c5a6d1989008a)...: deployed at 0xAEF7Bd79D629AAD40aA6c067Dc4f8c08C59A959D with 799752 gas
+[Deployment] Transferred ownership of PoolAddressesProviderRegistry to: 0x108bD6239eD7A331D553838BD62b4d4009Ae24A0 
+deploying "SupplyLogic" (tx: 0x80a791872a8903732fccef276b0cdbe36f034c4d5707b0c2f3fbe6ec10810189)...: deployed at 0xb839b0e8972e34d77bB1e00fE65212b68C2BC693 with 3433575 gas
+deploying "BorrowLogic" (tx: 0xe69cf83528f2ed23add9c93f9b30b3b0e10b8657dc61e025f404cfe8201aa0e1)...: deployed at 0xA745B8449b8c30a36E13932C4B4C6Ed6E7ba59Cc with 4932060 gas
+deploying "LiquidationLogic" (tx: 0x10460f55b036a1056b87299371f0a3a566a0f1f8969fd24d9ff4b3d4d76d9f89)...: deployed at 0xAFd96673F3C55fEda82B61380268d862d3b4D255 with 3577442 gas
+deploying "EModeLogic" (tx: 0x8a65ec8b2bdc55ae8f7706eaa4b3fd626295044737b6aa0f8978b15b9532670e)...: deployed at 0xc24f23cbFC39d8e0627f7a03dd0CD1D15820728c with 1174900 gas
+deploying "BridgeLogic" (tx: 0xd8eddda1fb9da0b5f8f29144663c72852ea764f7409b743ad7d78dd2716c4f85)...: deployed at 0x2BaF8d49D9baE459c12Ed8e09f4778d028AF9A8e with 1969919 gas
+deploying "ConfiguratorLogic" (tx: 0x09f487a4d67c585c6a3c1fbf59ae8f6bbc76f3a0fb0c3bb6f5ed986a56855ebb)...: deployed at 0xd4cd389180d28d528e2559c13f9010ee5b11af27 with 1928089 gas
+deploying "FlashLoanLogic" (tx: 0x5147e177c702395c6b0d00ee111026d4aec2e9876e4a79c9a0f3e6b630bf4dd8)...: deployed at 0x8047e5Bbc6b9713cE5Ef3171540aFb3dEA1886c5 with 2447797 gas
+deploying "PoolLogic" (tx: 0x2db9e94dc706709a37a9ece0d0451d9e6833a5f649c620415b06d04fd0bde724)...: deployed at 0xb9b0c74084390295164b1DEBEEa6759aB1E47Cf5 with 2124919 gas
+deploying "Treasury-Controller" (tx: 0x16911a92490f1c75deaf613edb769ab412a8a03ac3f66c9ff8cb527b123dd65f)...: deployed at 0xB63bfAAc0BbFa7fC36Ad52764684904D4Ce74F23 with 701912 gas
+deploying "Treasury-Implementation" (tx: 0xdb91086a121393f08cd3947bf7f0cac2d69f079e1388881b69009b216d589275)...: deployed at 0x47076ECD5b9Ee7028365e532Ac947ED078728bE4 with 2116786 gas
+Live network: false
+- Deployment of FaucetOwnable contract
+deploying "Faucet-Aave" (tx: 0x1c6d0bb9d14fbd836973c42ec06a7dbafaa787b1dd0e4ee183e2d221542bf8b9)...: deployed at 0x9d46dc0145bBf7Fc4a8cc75763823dA2E5EE8e21 with 1024938 gas
+- Setting up testnet tokens for "Aave" market at "bsc" network
+Deploy of TestnetERC20 contract DAI
+deploying "DAI-TestnetMintableERC20-Aave" (tx: 0x46c55ed2bea0eda0e7b7bb59c0799d50eb2e1443d957414dee5db4c96a1cdb5d)...: deployed at 0xa052Ccff819179BdeE91A2f60a6AF483d1060F7D with 1428820 gas
+Deploy of TestnetERC20 contract LINK
+deploying "LINK-TestnetMintableERC20-Aave" (tx: 0x8b6f20769d8ce637e35c00665edfb7fc32a8c056166db11c7b36f97ac536c512)...: deployed at 0xE12D19aF71c484138Ba163056C8Fb3801d195442 with 1428844 gas
+Deploy of TestnetERC20 contract USDC
+
+[NOTICE] Using ReserveAssets from configuration file
+{
+  DAI: '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3',
+  LINK: '0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD',
+  USDC: '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
+  WBTC: '0x0555E30da8f98308EdB960aa94C0Db47230d2B9c',
+  WETH: '0x4DB5a66E937A9F4473fA95b1cAF1d1E1D62E29EA',
+  USDT: '0x55d398326f99059fF775485246999027B3197955',
+  AAVE: '0xfb6115445Bff7b52FeB98650C87f44907E58f802',
+  EURS: '0x4Ce7c34859019b184239A1b6aB6A771D1485b24b'
+}
+deploying "PoolAddressesProvider-Aave" (tx: 0xbdf60940ef49475ef972d9104ada6ea65bea0d9f9d492d908ac9a4e1f86e606a)...: deployed at 0x3B8E4D8AE130984CcFA4E9860E4c4DcD11Db751c with 2220804 gas
+Added LendingPoolAddressesProvider with address "0x3B8E4D8AE130984CcFA4E9860E4c4DcD11Db751c" to registry located at 0xAEF7Bd79D629AAD40aA6c067Dc4f8c08C59A959D
+deploying "PoolDataProvider-Aave" (tx: 0x137e91faef53014bdefdf349e67f35cd28539531b7c29a23f0402f9666bfc4ca)...: deployed at 0x4A0fE4b17a4E7773f9251c8D141076Cddc8D04Db with 2695430 gas
+[NOTICE] Skipping deployment of testnet price aggregators
+deploying "Pool-Implementation" (tx: 0x561c0252ad0a515f1eb9aae05583b022a855c1c4a1c1af57c2da3fbe01bd4d00)...: deployed at 0x7e61aa1c4499D77a2471d66925197d3FB210CC48 with 4713168 gas
+Initialized Pool Implementation
+[INFO] Skipped L2 Pool due current network 'bsc' is not supported
+deploying "PoolConfigurator-Implementation" (tx: 0x72d6b1bf63b3fbd0ca0339d3351dd059854f975259d8375ad11eef6d24a421cb)...: deployed at 0x7468D731a151c2161A0E01ad1b2f22C183f4dF98 with 5249172 gas
+Initialized PoolConfigurator Implementation
+deploying "ACLManager-Aave" (tx: 0x2339dc8f226a329f5ffa7e0fbec230577afc5cfc464cd41cba3e3117e405b4d2)...: deployed at 0xff7B54effCA3a1e2b58E4CE503BbF8A959dA0C66 with 1155885 gas
+
+deploying "AaveOracle-Aave" (tx: 0xb4c7405b601c7cf1de41e889f23d416fd772e6a8dae186daa033eb1b25ca368b)...: deployed at 0xdf7702583214bfBEfCaF10087690F7933A4B0165 with 1011084 gas
+[Deployment] Added PriceOracle 0xdf7702583214bfBEfCaF10087690F7933A4B0165 to PoolAddressesProvider
+[Deployment] Attached Pool implementation and deployed proxy contract: 
+- Tx hash: 0x76b509d7a24875b5ac3f96381fda33f64f5c32c795ab1c05eb84844ca68c1505
+- Deployed Proxy: 0xe46499Cf554b88EeDad6614510CBce5CCEed91B3
+[Deployment] Attached PoolConfigurator implementation and deployed proxy 
+- Tx hash: 0x34146690abd888975d6eb9b09f65fb876882c237567192c15bc78a97dca1f22d
+- Deployed Proxy: 0x42f468b48D16d2626aa248797447D0D1FfcaC5f2
+
+deploying "EmissionManager" (tx: 0x61a4fd40ed0c06b1ce5bb978d82d0835d9f90ff96d079d2b7588633f0a653dc3)...: deployed at 0xC3Af6c84A950538b228025744039458AE456d39b with 1171030 gas
+deploying "IncentivesV2-Implementation" (tx: 0x2277a16bd84747af9b40078c16489fbe956c3cc4b8269a8a6d6680feca590913)...: deployed at 0xc0272b5eec6AF001723dFB03EB1773d6Bcf9Fd0D with 4061533 gas
+[Deployment] Attached Rewards implementation and deployed proxy contract: 
+- Tx hash: 0xedc47cab0b55077676b89f5de212ec27c0f44fefc8bb4ff861ebc680c6595c73
+deploying "AToken-Aave" (tx: 0xef9ff958be0eb52fbdd6abef64d386602b9e515fc43196265c1454640e0688c0)...: deployed at 0xB7b4A4814727d16aEe80168ad50aB716eD06Ff40 with 3074695 gas
+
+deploying "DelegationAwareAToken-Aave" (tx: 0x6f5311f42de96732e90dc52e566ae3ba9bd11053f2402463c6a25304fe9f7fac)...: deployed at 0xDD3b106d2a48407161f81E6796D3060C11e30B4A with 3213366 gas
+deploying "StableDebtToken-Aave" (tx: 0xd4644ac00689a070f3388228c51d912842ad25cda1d66c65b06a6d9380499804)...: deployed at 0x8Fc8a7d032b9C602f1a9106C5f1C9e56d817f81D with 2417561 gas
+
+reusing "StableDebtToken-Aave" at 0x8Fc8a7d032b9C602f1a9106C5f1C9e56d817f81D
+deploying "VariableDebtToken-Aave" (tx: 0x3bc7cac58b9e7a49acc8dad72578624e4164460412353246299bc1ee8b9867d6)...: deployed at 0x9E194A54543dbF3A51F6D7830224c458062A2615 with 2137877 gas
+deploying "ReserveStrategy-rateStrategyVolatileOne" (tx: 0xf2e5dd6dc948a03a85d53214128f3117e6929fc92d6a022eca7b174002f9723d)...: deployed at 0xF29C644596d4708CAA54a41766BeE63039ef8f4D with 723120 gas
+deploying "ReserveStrategy-rateStrategyStableOne" (tx: 0xe5906fe46506ac5b4f86d9ae3908f9bee3f029ec0389cca5bca169a7b624764e)...: deployed at 0xAB9D0dE5D6945C12F65E3d82EB3F13b805D97981 with 723108 gas
+deploying "ReserveStrategy-rateStrategyStableTwo" (tx: 0x59fda2ebf5997d531a2472f2823de92f2c8baefe7d97c35275e140062ab277eb)...: deployed at 0xf88e32DA46971a4fD9A3c1C5f1387d826Ec1Ce7a with 723108 gas
+[WARNING] Using latest deployed Treasury proxy instead of ReserveFactorTreasuryAddress from configuration file
+[NOTICE] Using ReserveAssets from configuration file
+Strategy address for asset DAI: 0xf88e32DA46971a4fD9A3c1C5f1387d826Ec1Ce7a
+Strategy address for asset LINK: 0xF29C644596d4708CAA54a41766BeE63039ef8f4D
+Strategy address for asset USDC: 0xAB9D0dE5D6945C12F65E3d82EB3F13b805D97981
+Strategy address for asset WBTC: 0xF29C644596d4708CAA54a41766BeE63039ef8f4D
+Strategy address for asset WETH: 0xF29C644596d4708CAA54a41766BeE63039ef8f4D
+Strategy address for asset USDT: 0xAB9D0dE5D6945C12F65E3d82EB3F13b805D97981
+Strategy address for asset AAVE: 0xF29C644596d4708CAA54a41766BeE63039ef8f4D
+Strategy address for asset EURS: 0xAB9D0dE5D6945C12F65E3d82EB3F13b805D97981
+- Reserves initialization in 3 txs
+  - Reserve ready for: DAI, LINK, USDC 
+    - Tx hash: 0xcfed2647c53386e6aabaed59070466835769bba1b4f80ec1f4376b53318dd882
+  - Reserve ready for: WBTC, WETH, USDT 
+    - Tx hash: 0x703aab3d5d2c0568f4fd2e71e1037fdb1a51123d28e3f74f5935f41cc3b8e180
+  - Reserve ready for: AAVE, EURS 
+    - Tx hash: 0x90ef4b49664bb5eb8eb146fc56d2a95d68e4af5d91cbd0874f50d0eaf069dff0
+[Deployment] Initialized all reserves
+- Configure reserves in 1 txs
+  - Init for: DAI, LINK, USDC, WBTC, WETH, USDT, AAVE, EURS 
+    - Tx hash: 0x95c22f72313c2ccc2d2372f7914e1b198fe4a32e48cd50badb4b59726bf9287d
+[Deployment] Configured all reserves
+
+deploying "WalletBalanceProvider" (tx: 0xec319fe656eaa9240545eba82ff3c39c81f543798d16b6660b32d0e80febdb32)...: deployed at 0x6AcE9EC5ACCe1210700E7126176351dF1b7bd4e9 with 761401 gas
+=== Post deployment hook ===
+- Enable stable borrow in selected assets
+- Checking reserve DAI , normalized symbol DAI
+  - Reserve DAI Borrow Stable Rate follows the expected configuration
+- Checking reserve LINK , normalized symbol LINK
+  - Reserve LINK Borrow Stable Rate follows the expected configuration
+- Checking reserve USDC , normalized symbol USDC
+  - Reserve USDC Borrow Stable Rate follows the expected configuration
+- Checking reserve WBTC , normalized symbol WBTC
+  - Reserve WBTC Borrow Stable Rate follows the expected configuration
+- Checking reserve WETH , normalized symbol WETH
+  - Reserve WETH Borrow Stable Rate follows the expected configuration
+- Checking reserve USDT , normalized symbol USDT
+  - Reserve USDT Borrow Stable Rate follows the expected configuration
+- Checking reserve AAVE , normalized symbol AAVE
+  - Reserve AAVE Borrow Stable Rate follows the expected configuration
+- Missing address 0x4Ce7c34859019b184239A1b6aB6A771D1485b24b at ReserveAssets configuration.
+- Review rate strategies
+- Checking reserve DAI , normalized symbol DAI
+  - Reserve DAI Interest Rate Strategy matches the expected configuration
+- Checking reserve LINK , normalized symbol LINK
+  - Reserve LINK Interest Rate Strategy matches the expected configuration
+- Checking reserve USDC , normalized symbol USDC
+  - Reserve USDC Interest Rate Strategy matches the expected configuration
+- Checking reserve WBTC , normalized symbol WBTC
+  - Reserve WBTC Interest Rate Strategy matches the expected configuration
+- Checking reserve WETH , normalized symbol WETH
+  - Reserve WETH Interest Rate Strategy matches the expected configuration
+- Checking reserve USDT , normalized symbol USDT
+  - Reserve USDT Interest Rate Strategy matches the expected configuration
+- Checking reserve AAVE , normalized symbol AAVE
+  - Reserve AAVE Interest Rate Strategy matches the expected configuration
+- Missing address 0x4Ce7c34859019b184239A1b6aB6A771D1485b24b at ReserveAssets configuration.
+- Setup Debt Ceiling
+[DAVID] Updating debt ceiling of USDT ...
+- Updated debt ceiling of USDT at 5,000,000.00
+[DAVID] Updating debt ceiling of EURS ...
+- Updated debt ceiling of EURS at 5,000,000.00
+- Successfully setup debt ceiling: USDT, EURS
+- Setup Borrowable assets in Isolation Mode
+[DAVID] Setting up isolation mode for DAI
+[DAVID] Setup isolation mode for DAI
+[DAVID] Setting up isolation mode for LINK
+[DAVID] Setup isolation mode for LINK
+[DAVID] Setting up isolation mode for USDC
+[DAVID] Setup isolation mode for USDC
+[DAVID] Setting up isolation mode for WBTC
+[DAVID] Setup isolation mode for WBTC
+[DAVID] Setting up isolation mode for WETH
+[DAVID] Setup isolation mode for WETH
+[DAVID] Setting up isolation mode for USDT
+[DAVID] Setup isolation mode for USDT
+[DAVID] Setting up isolation mode for AAVE
+[DAVID] Setup isolation mode for AAVE
+[DAVID] Setting up isolation mode for EURS
+[DAVID] Setup isolation mode for EURS
+- Successfully setup isolation mode for: DAI, USDC, USDT
+- Setup E-Modes
+- Added E-Mode:
+  - Label: Stablecoins
+  - Id: 1
+  - LTV: 9700
+  - LQT: 9750
+  - LQB: 10100
+  - Oracle: undefined with address 0x0000000000000000000000000000000000000000
+  - Added USDC asset to E-Mode Stablecoins
+  - Added USDT asset to E-Mode Stablecoins
+  - Added DAI asset to E-Mode Stablecoins
+  - Added EURS asset to E-Mode Stablecoins
+- Setup Liquidation protocol fee
+- Successfully setup liquidation protocol fee: DAI, LINK, USDC, WBTC, WETH, USDT, AAVE, EURS
+
+Accounts after deployment
+========
+┌─────────┬──────────────────────────────────┬──────────────────────────────────────────────┬────────────────────────┐
+│ (index) │ name                             │ account                                      │ balance                │
+├─────────┼──────────────────────────────────┼──────────────────────────────────────────────┼────────────────────────┤
+│ 0       │ 'deployer'                       │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+│ 1       │ 'aclAdmin'                       │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+│ 2       │ 'emergencyAdmin'                 │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+│ 3       │ 'poolAdmin'                      │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+│ 4       │ 'addressesProviderRegistryOwner' │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+│ 5       │ 'treasuryProxyAdmin'             │ '0x48b0d37632A8f4bDDd3D8e3DF1D0A922Bc2c567F' │ '0.0'                  │
+│ 6       │ 'incentivesProxyAdmin'           │ '0x48b0d37632A8f4bDDd3D8e3DF1D0A922Bc2c567F' │ '0.0'                  │
+│ 7       │ 'incentivesEmissionManager'      │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+│ 8       │ 'incentivesRewardsVault'         │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+└─────────┴──────────────────────────────────┴──────────────────────────────────────────────┴────────────────────────┘
+
+Deployments
+===========
+┌─────────────────────────────────────────┬──────────────────────────────────────────────┐
+│ (index)                                 │ address                                      │
+├─────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ AAVE-AToken-Aave                        │ '0xeeFbb4CDEA0051B1aCE87d4acB96555687548589' │
+│ AAVE-StableDebtToken-Aave               │ '0x749Bb82FD734398016373C33DDAe15593B068CfA' │
+│ AAVE-VariableDebtToken-Aave             │ '0xC948a495197eDeE58e8A80aA64e6378E264e7f9f' │
+│ ACLManager-Aave                         │ '0xff7B54effCA3a1e2b58E4CE503BbF8A959dA0C66' │
+│ AToken-Aave                             │ '0xB7b4A4814727d16aEe80168ad50aB716eD06Ff40' │
+│ AaveOracle-Aave                         │ '0xdf7702583214bfBEfCaF10087690F7933A4B0165' │
+│ BorrowLogic                             │ '0xA745B8449b8c30a36E13932C4B4C6Ed6E7ba59Cc' │
+│ BridgeLogic                             │ '0x2BaF8d49D9baE459c12Ed8e09f4778d028AF9A8e' │
+│ ConfiguratorLogic                       │ '0xd4cd389180d28d528e2559c13f9010ee5b11af27' │
+│ DAI-AToken-Aave                         │ '0x1426647002c6CfA4c68e125237Cb8FFdcE5d5e5c' │
+│ DAI-StableDebtToken-Aave                │ '0x9522f94fd753cb5F039e40D9dAb8db9e581fCF04' │
+│ DAI-VariableDebtToken-Aave              │ '0xd947fe121858E58CfEC9fC66F80afCd27E7e95eB' │
+│ DelegationAwareAToken-Aave              │ '0xDD3b106d2a48407161f81E6796D3060C11e30B4A' │
+│ EModeLogic                              │ '0xc24f23cbFC39d8e0627f7a03dd0CD1D15820728c' │
+│ EURS-AToken-Aave                        │ '0xF46354c23215f0666e1F454442fEbf8Dfaec19B3' │
+│ EURS-StableDebtToken-Aave               │ '0x7102c06333ec6EBb7FD0dfbD9da404f10Bd229B3' │
+│ EURS-VariableDebtToken-Aave             │ '0xabb612828c0a5f770257839e9A4Bc75C1a65181E' │
+│ EmissionManager                         │ '0xC3Af6c84A950538b228025744039458AE456d39b' │
+│ Faucet-Aave                             │ '0x9d46dc0145bBf7Fc4a8cc75763823dA2E5EE8e21' │
+│ FlashLoanLogic                          │ '0x8047e5Bbc6b9713cE5Ef3171540aFb3dEA1886c5' │
+│ IncentivesProxy                         │ '0x5ef7987a7D0c5131C6DB42E28188BF6a72fb12F9' │
+│ IncentivesV2-Implementation             │ '0xc0272b5eec6AF001723dFB03EB1773d6Bcf9Fd0D' │
+│ LINK-AToken-Aave                        │ '0x38E3f51BDD332B4D0DFfdd651B19856EeD4335A2' │
+│ LINK-StableDebtToken-Aave               │ '0x8946c6AD8a7e7b186BcEF669449cb7b5e706Ea67' │
+│ LINK-VariableDebtToken-Aave             │ '0x4b10846E9B62330695AF6fC0a3FE4fb72cb6429F' │
+│ LiquidationLogic                        │ '0xAFd96673F3C55fEda82B61380268d862d3b4D255' │
+│ Pool-Implementation                     │ '0x7e61aa1c4499D77a2471d66925197d3FB210CC48' │
+│ Pool-Proxy-Aave                         │ '0xe46499Cf554b88EeDad6614510CBce5CCEed91B3' │
+│ PoolAddressesProvider-Aave              │ '0x3B8E4D8AE130984CcFA4E9860E4c4DcD11Db751c' │
+│ PoolAddressesProviderRegistry           │ '0xAEF7Bd79D629AAD40aA6c067Dc4f8c08C59A959D' │
+│ PoolConfigurator-Implementation         │ '0x7468D731a151c2161A0E01ad1b2f22C183f4dF98' │
+│ PoolConfigurator-Proxy-Aave             │ '0x42f468b48D16d2626aa248797447D0D1FfcaC5f2' │
+│ PoolDataProvider-Aave                   │ '0x4A0fE4b17a4E7773f9251c8D141076Cddc8D04Db' │
+│ PoolLogic                               │ '0xb9b0c74084390295164b1DEBEEa6759aB1E47Cf5' │
+│ ReserveStrategy-rateStrategyStableOne   │ '0xAB9D0dE5D6945C12F65E3d82EB3F13b805D97981' │
+│ ReserveStrategy-rateStrategyStableTwo   │ '0xf88e32DA46971a4fD9A3c1C5f1387d826Ec1Ce7a' │
+│ ReserveStrategy-rateStrategyVolatileOne │ '0xF29C644596d4708CAA54a41766BeE63039ef8f4D' │
+│ ReservesSetupHelper                     │ '0x699ebC4C8d0c4a3fb1721840Ae75EEeA09D1a608' │
+│ StableDebtToken-Aave                    │ '0x8Fc8a7d032b9C602f1a9106C5f1C9e56d817f81D' │
+│ SupplyLogic                             │ '0xb839b0e8972e34d77bB1e00fE65212b68C2BC693' │
+│ Treasury-Controller                     │ '0xB63bfAAc0BbFa7fC36Ad52764684904D4Ce74F23' │
+│ Treasury-Implementation                 │ '0x47076ECD5b9Ee7028365e532Ac947ED078728bE4' │
+│ TreasuryProxy                           │ '0x918737Bd3fDCDDb2ae30De41e3e89806fC8228bf' │
+│ USDC-AToken-Aave                        │ '0x02BA05627d33c95807a06cc0DB05972eD3aF9B6D' │
+│ USDC-StableDebtToken-Aave               │ '0x9d53752da8C7c191e41c6C67b9eb4207982124ea' │
+│ USDC-VariableDebtToken-Aave             │ '0x479BBa7675b00cF4f27Ef0E00F248ACD1E80EB86' │
+│ USDT-AToken-Aave                        │ '0xE5cC5280D72770cf7Ff530a9373dA8F0135AEc67' │
+│ USDT-StableDebtToken-Aave               │ '0x9eE86221982f4E4bB00C2A4dDEFF7B3c3d77981B' │
+│ USDT-VariableDebtToken-Aave             │ '0x08F6828A284910Ea9E0EF2E94F6AC89203361FcC' │
+│ UiIncentiveDataProviderV3               │ '0x2E15627381392816b5B55Ac64dE77746bD558479' │
+│ VariableDebtToken-Aave                  │ '0x9E194A54543dbF3A51F6D7830224c458062A2615' │
+│ WBTC-AToken-Aave                        │ '0x9f4ef5dA033EF2C31E380567e81cE6F3e68565d7' │
+│ WBTC-StableDebtToken-Aave               │ '0x205929E9612739599782AE5c672AFDbEcEA81999' │
+│ WBTC-VariableDebtToken-Aave             │ '0xB42485672a2CbDA08006b7f10E6DaEB6ceE68c9E' │
+│ WETH-AToken-Aave                        │ '0x053699119842BAf1b3D2890336d9407B893091a3' │
+│ WETH-StableDebtToken-Aave               │ '0xd47a8e3132cEEe57A250E27A3d83aA12468e222b' │
+│ WETH-VariableDebtToken-Aave             │ '0x7339bba9eA50dd8cFD604906397c8343557aa1ec' │
+│ WalletBalanceProvider                   │ '0x6AcE9EC5ACCe1210700E7126176351dF1b7bd4e9' │
+│ WrappedTokenGatewayV3                   │ '0x3a9F88580254E64aD2258c7eB91E59B56E3DF7e7' │
+│ UiPoolDataProviderV3                    │ '0x1B4776a1d5d77f5fBBfc334DCF0346ed6c84432a' │
+└─────────────────────────────────────────┴──────────────────────────────────────────────┘
+
+Mintable Reserves and Rewards
+┌────────────────────────────────┬──────────────────────────────────────────────┐
+│ (index)                        │ address                                      │
+├────────────────────────────────┼──────────────────────────────────────────────┤
+│ DAI-TestnetMintableERC20-Aave  │ '0xa052Ccff819179BdeE91A2f60a6AF483d1060F7D' │
+│ LINK-TestnetMintableERC20-Aave │ '0xE12D19aF71c484138Ba163056C8Fb3801d195442' │
