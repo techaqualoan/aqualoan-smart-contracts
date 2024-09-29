@@ -60,6 +60,7 @@ task(`upgrade-atokens`)
         args: [await poolAddressesProvider.getPool()],
         ...COMMON_DEPLOY_PARAMS,
       });
+      
       const deployedRevision = await (
         await (await getAToken(newAtokenArtifact.address)).ATOKEN_REVISION()
       ).toString();
@@ -78,7 +79,7 @@ task(`upgrade-atokens`)
             asset,
             treasury,
             incentivesController,
-            name: `Aave ${ATokenNamePrefix} ${symbol}`,
+            name: `Aqualoan ${ATokenNamePrefix} ${symbol}`,
             symbol: `a${SymbolPrefix}${symbol}`,
             implementation: newAtokenArtifact.address,
             params: [],

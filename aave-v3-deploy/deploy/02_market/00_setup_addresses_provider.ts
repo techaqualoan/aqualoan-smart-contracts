@@ -77,17 +77,20 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   ).connect(signer);
 
   // 2. Set the MarketId
+  console.log(`[AQUA] 2. Set the MarketId`)
   await waitForTx(
     await addressesProviderInstance.setMarketId(poolConfig.MarketId)
   );
 
   // 3. Add AddressesProvider to Registry
+  console.log(`[AQUA] 3. Add AddressesProvider to Registry`)
   await addMarketToRegistry(
     poolConfig.ProviderId,
     addressesProviderArtifact.address
   );
 
   // 4. Deploy AaveProtocolDataProvider getters contract
+  console.log(`[AQUA] 4. Deploy AaveProtocolDataProvider getters contract`)
   const protocolDataProvider = await deploy(POOL_DATA_PROVIDER, {
     from: deployer,
     contract: "AaveProtocolDataProvider",
@@ -98,6 +101,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     await addressesProviderInstance.getPoolDataProvider();
 
   // Set the ProtocolDataProvider if is not already set at addresses provider
+  console.log(`[AQUA] 5. Set the ProtocolDataProvider if is not already set at addresses provider`)
   if (
     !isEqualAddress(protocolDataProvider.address, currentProtocolDataProvider)
   ) {

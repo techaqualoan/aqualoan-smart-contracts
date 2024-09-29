@@ -189,11 +189,11 @@ export const initReservesByHelper = async (
       treasury: treasuryAddress,
       incentivesController,
       underlyingAssetName: reserveSymbols[i],
-      aTokenName: `Aave ${aTokenNamePrefix} ${reserveSymbols[i]}`,
+      aTokenName: `Aqualoan ${aTokenNamePrefix} ${reserveSymbols[i]}`,
       aTokenSymbol: `a${symbolPrefix}${reserveSymbols[i]}`,
-      variableDebtTokenName: `Aave ${variableDebtTokenNamePrefix} Variable Debt ${reserveSymbols[i]}`,
+      variableDebtTokenName: `Aqualoan ${variableDebtTokenNamePrefix} Variable Debt ${reserveSymbols[i]}`,
       variableDebtTokenSymbol: `variableDebt${symbolPrefix}${reserveSymbols[i]}`,
-      stableDebtTokenName: `Aave ${stableDebtTokenNamePrefix} Stable Debt ${reserveSymbols[i]}`,
+      stableDebtTokenName: `Aqualoan ${stableDebtTokenNamePrefix} Stable Debt ${reserveSymbols[i]}`,
       stableDebtTokenSymbol: `stableDebt${symbolPrefix}${reserveSymbols[i]}`,
       params: "0x10",
     });
@@ -433,7 +433,6 @@ export const addMarketToRegistry = async (
   }
 
   const signer = await hre.ethers.getSigner(providerRegistryOwner);
-
   // 1. Set the provider at the Registry
   await waitForTx(
     await providerRegistryInstance

@@ -17,15 +17,15 @@ task(`verify-contracts`).setAction(
     );
     // 1. 
     const artifacts = await getArtifactsFromJson(network)
-    for(const artifact of artifacts)
-    try {
-      console.log(`[AQUA] --------------- verifying ${artifact.address} args:(${artifact.args}) `)
-      await hre.run("verify:verify", {
-        address: artifact.address,
-        constructorArguments: artifact.args || [],
-      });
-    } catch (error) {
-      console.error(error);
-    }
+    for (const artifact of artifacts)
+      try {
+        console.log(`[AQUA] --------------- verifying ${artifact.address} args:(${artifact.args}) `)
+        await hre.run("verify:verify", {
+          address: artifact.address,
+          constructorArguments: artifact.args || [],
+        });
+      } catch (error) {
+        console.error(error);
+      }
   }
 );

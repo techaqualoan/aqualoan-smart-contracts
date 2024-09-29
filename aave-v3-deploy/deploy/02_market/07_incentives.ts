@@ -86,7 +86,11 @@ const func: DeployFunction = async function ({
   )) as RewardsController;
 
   // Call to initialize at implementation contract to prevent others.
-  await waitForTx(await incentivesImpl.initialize(ZERO_ADDRESS));
+  try {
+    await waitForTx(await incentivesImpl.initialize(ZERO_ADDRESS));
+  } catch (error: any) {
+    console.log(error.reason)
+  }
   // The Rewards Controller must be set at PoolAddressesProvider with id keccak256("INCENTIVES_CONTROLLER"):
   // 0x703c2c8634bed68d98c029c18f310e7f7ec0e5d6342c590190b3cb8b3ba54532
   const incentivesControllerId = hre.ethers.utils.keccak256(

@@ -12,6 +12,7 @@ const func: DeployFunction = async function ({
   const { deploy } = deployments;
   const { deployer, addressesProviderRegistryOwner } = await getNamedAccounts();
 
+  console.log(`[AQUA] ---------- PoolAddressesProviderRegistry --------`)
   const poolAddressesProviderRegistryArtifact = await deploy(
     "PoolAddressesProviderRegistry",
     {
