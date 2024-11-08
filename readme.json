@@ -1,0 +1,335 @@
+{
+  "docs": [
+    "https://docs.aave.com/developers"
+  ],
+  "deployment": {
+    "ref": "https://github.com/aave/aave-v3-deploy/tree/main"
+  },
+  "verify": [
+    "npx hardhat verify-contracts --network sepolia",
+    "npx hardhat verify-tokens --network sepolia"
+  ],
+  "deploy": {
+    "command": "HARDHAT_NETWORK=sepolia npx hardhat deploy",
+    "sepolia": {
+      "SupplyLogic": "0x96Ed0C16065c615c708a05c0B12a8e167349F4Bb",
+      "BorrowLogic": "0xAB0CEbB985f6fB2983C4247136539aF4dc92F333",
+      "LiquidationLogic": "0x6d3E32de4F5B995c5B934e7E2166de7b1A751BE8",
+      "EModeLogic": "0x29Cf920871458F29625FDF83A84999aA806b3Ca3",
+      "BridgeLogic": "0xef0A4336637133a314F76f4393A866042F4daa27",
+      "ConfiguratorLogic": "0x4d668FcCc0ee18532036649aEFbF677084e0168F",
+      "FlashLoanLogic": "0xcBb8d405D32Db585a334593468E7396389B05787",
+      "PoolLogic": "0xfCff9eBDfa3610f02229F3B135D99884AA57D292",
+      "Treasury-Controller": "0xFdE29143F0c5F5179F1865c30031d690dC81db9D",
+      "Treasury-Implementation": "0x3aaee2EdeB3f9c45DdA9846FC643e59abe52B4B3",
+      "Faucet-Aave": "0x3b784B7e953FBebb8D4cA3bf2a540de82FED6960",
+      "DAI": "0x01B2c2CA84229CE81C07ba705be578eF84bC0640",
+      "LINK": "0x1aEce612469ac9a5a8D5417EAA8D719C54C64dA8",
+      "USDC": "0xFdc853f677bcd5C70f474c8DE44065d1C098e460",
+      "WBTC": "0x025A206cAD71Fdf59f30699825cFf0aEF8B58E64",
+      "WETH": "0x4c3D081071488ce3b6F553621F54a3fB9C12062d",
+      "USDT": "0xC905F921A39A92c32B9Ca8E38641f006b0f1251c",
+      "AAVE": "0x301BAc3a5C4580d2C543B41B08F09964014D48ea",
+      "EURS": "0xed8F253d747Ec6f047b89Fc9619f213F6aa1912F",
+      "PoolAddressesProvider-Aave": "0x6a197FD3AD00AeC5C4aCeeAC5AFBF185d5876A11",
+      "LendingPoolAddressesProvider": "0xD7fA28917C852b4708615A6E3A50f4dA5C8c2b9F",
+      "PoolDataProvider-Aave": "0x23539AD7ccd073CFA00dCEB1C714421163250d91",
+      "DAI-TestnetPriceAggregator-Aave": "0xc4F42cEd6A576fd103BCc3d81C21091b0ED79765",
+      "LINK-TestnetPriceAggregator-Aave": "0x392894Ba987A38688eDCC027bFbE6939573464cc",
+      "USDC-TestnetPriceAggregator-Aave": "0x160CC9f046489bE114f3C38a45d9566aF82C6c81",
+      "WBTC-TestnetPriceAggregator-Aave": "0x2720c824Ee50C2A78185A217Aa1C420A3D217906",
+      "WETH-TestnetPriceAggregator-Aave": "0x78Dc78211d5348c087B4cdB9Ae486D1Be802201F",
+      "USDT-TestnetPriceAggregator-Aave": "0x484714c6315938227CD688f07173b27605dd7983",
+      "AAVE-TestnetPriceAggregator-Aave": "0xce3BE2f66Bd9b7D2628f9f9A66435A617ea23624",
+      "EURS-TestnetPriceAggregator-Aave": "0x85585940c482a19867F1629c40a6CaC5605e773F",
+      "Pool-Implementation": "0x4Fa7df6aeaF7cCAe117d8f333361aEa46AA121fe",
+      "PoolConfigurator-Implementation": "0x53aCA03F37cDa9b72A59B628082974712c0DBA7d",
+      "ACLManager-Aave": "0x02F83b2177A992fE4C70052602f26c83D9B35Ed4",
+      "AaveOracle-Aave": "0x402f45DE0E5EEbc2bD44427Dfca892eFCF26253f",
+      "EmissionManager": "0xC78c9101aa3D856341Ca955C2dc6ff9231f677Ad",
+      "IncentivesV2-Implementation": "0x0BbD7c7c5d32E7a85c55981e85d0c6deD3d306ad",
+      "PullRewardsTransferStrategy": "0x2a3763D74758f79395C25c7B2249a59650352CB1",
+      "AToken-Aave": "0xe9567B4B6521d6ADE7A6bf58D5a3036BD647c9de",
+      "DelegationAwareAToken-Aave": "0x9cC407fFF8dC12C3610D1e657d175e438f90C57c",
+      "StableDebtToken-Aave": "0xE6298441ee1048D4ef5Ed0479794AE78DcEb4916",
+      "VariableDebtToken-Aave": "0xCe004C1593977313E4e5b46AF7fdd95Fa7622158",
+      "ReserveStrategy-rateStrategyVolatileOne": "0x9C178e5771BF5402888ac9B637B95f7F1cA7b66D",
+      "ReserveStrategy-rateStrategyStableOne": "0xFF418410053701626430d7c0AAd8207d6Ea6C800",
+      "ReserveStrategy-rateStrategyStableTwo": "0x967A10bdd603529472c525e71644df0aDEd00a8f",
+      "MockFlashLoanReceiver": "0xA887cE548f39784FCDC7F0Df977b55731d766BDc",
+      "WalletBalanceProvider": "0xc4928e7E9040E8AAd7D7eD5eF00b7146f9aD4bb3",
+      "UiPoolDataProviderV3": "0xE5f641fed55647BB6D69139B9b1F85ACd6b504d2",
+      "GasConsumed": "2.039 ETH"
+    },
+    "BSC-Testnet": {
+      "SupplyLogic": "0x3b784B7e953FBebb8D4cA3bf2a540de82FED6960",
+      "BorrowLogic": "0x01B2c2CA84229CE81C07ba705be578eF84bC0640",
+      "LiquidationLogic": "0x1aEce612469ac9a5a8D5417EAA8D719C54C64dA8",
+      "EModeLogic": "0xFdc853f677bcd5C70f474c8DE44065d1C098e460",
+      "BridgeLogic": "0x025A206cAD71Fdf59f30699825cFf0aEF8B58E64",
+      "ConfiguratorLogic": "0x4c3D081071488ce3b6F553621F54a3fB9C12062d",
+      "FlashLoanLogic": "0xC905F921A39A92c32B9Ca8E38641f006b0f1251c",
+      "PoolLogic": "0x301BAc3a5C4580d2C543B41B08F09964014D48ea",
+      "Treasury-Controller": "0x6a197FD3AD00AeC5C4aCeeAC5AFBF185d5876A11",
+      "Treasury-Implementation": "0x44d0095E9dbF205F6c11f26ABb1B6E253b3dA236",
+      "Faucet-Aave": "0x1d400F1774Cd9AdCE39C877eADEA4dA287958C7B",
+      "DAI": "0xc4F42cEd6A576fd103BCc3d81C21091b0ED79765",
+      "LINK": "0x392894Ba987A38688eDCC027bFbE6939573464cc",
+      "USDC": "0x160CC9f046489bE114f3C38a45d9566aF82C6c81",
+      "WBTC": "0x2720c824Ee50C2A78185A217Aa1C420A3D217906",
+      "WETH": "0x78Dc78211d5348c087B4cdB9Ae486D1Be802201F",
+      "USDT": "0x484714c6315938227CD688f07173b27605dd7983",
+      "AAVE": "0xce3BE2f66Bd9b7D2628f9f9A66435A617ea23624",
+      "EURS": "0x85585940c482a19867F1629c40a6CaC5605e773F",
+      "PoolAddressesProvider-Aave": "0x4Fa7df6aeaF7cCAe117d8f333361aEa46AA121fe",
+      "LendingPoolAddressesProvider": "0xfD68Bed42732C5357C5100c04140df95FB05EAd9",
+      "PoolDataProvider-Aave": "0xF5e8fD150bB8063ce7a33974Be62992a2DF3580B",
+      "DAI-TestnetPriceAggregator-Aave": "0x94a8834E30d5b68d15a16284B7018F13A113Ecdf",
+      "LINK-TestnetPriceAggregator-Aave": "0x02F83b2177A992fE4C70052602f26c83D9B35Ed4",
+      "USDC-TestnetPriceAggregator-Aave": "0x683035324CD604bC512915E78BcFB2955bb46E84",
+      "WBTC-TestnetPriceAggregator-Aave": "0xe4cbc24a153A3172fa501d6659C2F7a4778284eE",
+      "WETH-TestnetPriceAggregator-Aave": "0x502A47E6207009556CD697e01B033Eb5B93dedB1",
+      "USDT-TestnetPriceAggregator-Aave": "0x402f45DE0E5EEbc2bD44427Dfca892eFCF26253f",
+      "AAVE-TestnetPriceAggregator-Aave": "0x55ee1C47b536D6755073Ceda51f15A48c14c96C8",
+      "EURS-TestnetPriceAggregator-Aave": "0xFDEBD381497920312720b1b780e3f287CbF0765a",
+      "Pool-Implementation": "0x0D97D5857cca294039c1d9DA97037402b6FE1EF6",
+      "PoolConfigurator-Implementation": "0x10c196f1Ca03Eb24151FaF6C52D95976AD27B6Fc",
+      "ACLManager-Aave": "0xdB9c769Ca012Dcd8C2CeCD73955671D5135fA232",
+      "AaveOracle-Aave": "0xe9567B4B6521d6ADE7A6bf58D5a3036BD647c9de",
+      "EmissionManager": "0xCe004C1593977313E4e5b46AF7fdd95Fa7622158",
+      "IncentivesV2-Implementation": "0xb1506b5B395E85f8Ee86D8E09cb646b7160428a8",
+      "PullRewardsTransferStrategy": "0x574346c08e5de6f6b9b7d8a3284c89c6777befcc",
+      "AToken-Aave": "0xbBddA8A5D7a9B668564447DcAdE0cdbBB1A752CC",
+      "DelegationAwareAToken-Aave": "0xc4928e7E9040E8AAd7D7eD5eF00b7146f9aD4bb3",
+      "StableDebtToken-Aave": "0x169fa39fC32Bd4cF3e32fCEcC2F2701Ef0a20fc4",
+      "VariableDebtToken-Aave": "0xEceb7DE8F9D5745c3a52EF3a71E3bEFADaab6012",
+      "ReserveStrategy-rateStrategyVolatileOne": "0x907c8d798CF2fB5074Fa46fcE95E1da308074cb9",
+      "ReserveStrategy-rateStrategyStableOne": "0x17F54767c22d67857477D4F236569745923D652b",
+      "ReserveStrategy-rateStrategyStableTwo": "0x1b0F49C7cF82cE4DD7a01F0137899c9eb00BCC9f",
+      "MockFlashLoanReceiver": "0x4e5a8908418e8BFCc2b03d5a0D27fe4Cb4E13738",
+      "WalletBalanceProvider": "0x8d7D2F532E421485D4922572784a0D87445da7De",
+    },
+    "GasConsumed": "0.9489058074 BNB"
+  },
+  "BSC-mainnet": {
+    "AAVE-StableDebtToken-Aave": "0x749Bb82FD734398016373C33DDAe15593B068CfA",
+    "AAVE-VariableDebtToken-Aave": "0xC948a495197eDeE58e8A80aA64e6378E264e7f9f",
+    "SupplyLogic": "0xb839b0e8972e34d77bB1e00fE65212b68C2BC693",
+    "BorrowLogic": "0xA745B8449b8c30a36E13932C4B4C6Ed6E7ba59Cc",
+    "LiquidationLogic": "0xAFd96673F3C55fEda82B61380268d862d3b4D255",
+    "EModeLogic": "0xc24f23cbFC39d8e0627f7a03dd0CD1D15820728c",
+    "EURS-AToken-Aave": "0xF46354c23215f0666e1F454442fEbf8Dfaec19B3",
+    "EURS-StableDebtToken-Aave": "0x7102c06333ec6EBb7FD0dfbD9da404f10Bd229B3",
+    "EURS-VariableDebtToken-Aave": "0xabb612828c0a5f770257839e9A4Bc75C1a65181E",
+    "BridgeLogic": "0x2BaF8d49D9baE459c12Ed8e09f4778d028AF9A8e",
+    "ConfiguratorLogic": "0xd4cd389180d28d528e2559c13f9010ee5b11af27",
+    "DAI-AToken-Aave": "0x1426647002c6CfA4c68e125237Cb8FFdcE5d5e5c",
+    "DAI-StableDebtToken-Aave": "0x9522f94fd753cb5F039e40D9dAb8db9e581fCF04",
+    "DAI-VariableDebtToken-Aave": "0xd947fe121858E58CfEC9fC66F80afCd27E7e95eB",
+    "FlashLoanLogic": "0x8047e5Bbc6b9713cE5Ef3171540aFb3dEA1886c5",
+    "IncentivesProxy": "0x5ef7987a7D0c5131C6DB42E28188BF6a72fb12F9",
+    "IncentivesV2-Implementation": "0xc0272b5eec6AF001723dFB03EB1773d6Bcf9Fd0D",
+    "LINK-AToken-Aave": "0x38E3f51BDD332B4D0DFfdd651B19856EeD4335A2",
+    "LINK-StableDebtToken-Aave": "0x8946c6AD8a7e7b186BcEF669449cb7b5e706Ea67",
+    "LINK-VariableDebtToken-Aave": "0x4b10846E9B62330695AF6fC0a3FE4fb72cb6429F",
+    "PoolLogic": "0xb9b0c74084390295164b1DEBEEa6759aB1E47Cf5",
+    "Treasury-Controller": "0xB63bfAAc0BbFa7fC36Ad52764684904D4Ce74F23",
+    "Treasury-Implementation": "0x47076ECD5b9Ee7028365e532Ac947ED078728bE4",
+    "TreasuryProxy": "0x918737Bd3fDCDDb2ae30De41e3e89806fC8228bf",
+    "Faucet-Aave": "0x9d46dc0145bBf7Fc4a8cc75763823dA2E5EE8e21",
+    "USDC-AToken-Aave": "0x9d53752da8C7c191e41c6C67b9eb4207982124ea",
+    "USDC-StableDebtToken-Aave": "0x9d53752da8C7c191e41c6C67b9eb4207982124ea",
+    "USDC-VariableDebtToken-Aave": "0x479BBa7675b00cF4f27Ef0E00F248ACD1E80EB86",
+    "USDT-AToken-Aave": "0xE5cC5280D72770cf7Ff530a9373dA8F0135AEc67",
+    "USDT-StableDebtToken-Aave": "0x9eE86221982f4E4bB00C2A4dDEFF7B3c3d77981B",
+    "USDT-VariableDebtToken-Aave": "0x08F6828A284910Ea9E0EF2E94F6AC89203361FcC",
+    "WBTC-AToken-Aave": "0x9f4ef5dA033EF2C31E380567e81cE6F3e68565d7",
+    "WBTC-StableDebtToken-Aave": "0x205929E9612739599782AE5c672AFDbEcEA81999",
+    "WBTC-VariableDebtToken-Aave": "0xB42485672a2CbDA08006b7f10E6DaEB6ceE68c9E",
+    "WETH-AToken-Aave": "0x053699119842BAf1b3D2890336d9407B893091a3",
+    "WETH-StableDebtToken-Aave": "0xd47a8e3132cEEe57A250E27A3d83aA12468e222b",
+    "WETH-VariableDebtToken-Aave": "0x7339bba9eA50dd8cFD604906397c8343557aa1ec",
+    "WrappedTokenGatewayV3": "0x3a9F88580254E64aD2258c7eB91E59B56E3DF7e7",
+    "DAI": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+    "LINK": "0xF8A0BF9cF54Bb92F17374d9e9A321E6a111a51bD",
+    "USDC": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+    "WBTC": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c",
+    "WETH": "0x4DB5a66E937A9F4473fA95b1cAF1d1E1D62E29EA",
+    "USDT": "0x55d398326f99059fF775485246999027B3197955",
+    "AAVE": "0xfb6115445Bff7b52FeB98650C87f44907E58f802",
+    "EURS": "0x4Ce7c34859019b184239A1b6aB6A771D1485b24b",
+    "PoolAddressesProvider-Aave": "0x3B8E4D8AE130984CcFA4E9860E4c4DcD11Db751c",
+    "PoolAddressesProviderRegistry": "0xAEF7Bd79D629AAD40aA6c067Dc4f8c08C59A959D",
+    "PoolDataProvider-Aave": "0x3B8E4D8AE130984CcFA4E9860E4c4DcD11Db751c",
+    "Pool-Implementation": "0x7e61aa1c4499D77a2471d66925197d3FB210CC48",
+    "Pool-Proxy-Aave": "0xe46499Cf554b88EeDad6614510CBce5CCEed91B3",
+    "PoolConfigurator-Implementation": "0x7468D731a151c2161A0E01ad1b2f22C183f4dF98",
+    "PoolConfigurator-Proxy-Aave": "0x42f468b48D16d2626aa248797447D0D1FfcaC5f2",
+    "ACLManager-Aave": "0xff7B54effCA3a1e2b58E4CE503BbF8A959dA0C66",
+    "AaveOracle-Aave": "0xdf7702583214bfBEfCaF10087690F7933A4B0165",
+    "EmissionManager": "0xC3Af6c84A950538b228025744039458AE456d39b",
+    "AToken-Aave": "0xeeFbb4CDEA0051B1aCE87d4acB96555687548589",
+    "DelegationAwareAToken-Aave": "0xDD3b106d2a48407161f81E6796D3060C11e30B4A",
+    "StableDebtToken-Aave": "0x8Fc8a7d032b9C602f1a9106C5f1C9e56d817f81D",
+    "VariableDebtToken-Aave": "0x9E194A54543dbF3A51F6D7830224c458062A2615",
+    "ReserveStrategy-rateStrategyVolatileOne": "0xF29C644596d4708CAA54a41766BeE63039ef8f4D",
+    "ReserveStrategy-rateStrategyStableOne": "0xAB9D0dE5D6945C12F65E3d82EB3F13b805D97981",
+    "ReserveStrategy-rateStrategyStableTwo": "0xf88e32DA46971a4fD9A3c1C5f1387d826Ec1Ce7a",
+    "WalletBalanceProvider": "0x6AcE9EC5ACCe1210700E7126176351dF1b7bd4e9",
+    "ReservesSetupHelper": "0x699ebC4C8d0c4a3fb1721840Ae75EEeA09D1a608",
+    "UiIncentiveDataProviderV3": "0x2E15627381392816b5B55Ac64dE77746bD558479",
+    "GasConsumed": "0.8494160321521337 BNB"
+  },
+  "transactions": {
+    "initial"{
+      "usdt": {
+        "supply": [
+          "https://bscscan.com/tx/0xa8955261ba5e2c812b4f30a5fd2194cd20693cd7cc8328858d8df01a626f87aa"
+        ],
+        "borrow": [
+          "https://bscscan.com/tx/0xd25d8c3fb304a94fcb0f6579b097d55749272bf00c95ed914e351933e53d266e"
+        ],
+        "repay": [
+          "https://bscscan.com/tx/0xd96ad057ccf42204c1970b1676d802f9d89f811db24aa33c16945dfec28475fd"
+        ],
+        "withdraw": [
+          "https://bscscan.com/tx/0x79f82d2c0cb77fc000d1ce63802979407b65abf3d240bc123d5659f724072ebb"
+        ]
+      },
+      "usdc": {
+        "supply": [
+          "https://bscscan.com//tx/0xbda6f8daf4667c3f0c911fb99f8e4d6a7bb474f2db5420370a78e9e06eaea5b4"
+        ],
+        "borrow": [
+          "https://bscscan.com//tx/0x97cd91fd67908cc9b10fa94d9174fdba192a7da84ff14963e4608e211166504f"
+        ],
+        "repay": [
+          "https://bscscan.com/tx/0xe620745be0d908de69b89c46c1d03b8aec6832f48f5d97678ffbf5c482cc922c"
+        ],
+        "withdraw": [
+          "https://bscscan.com//tx/0x10e1970765c53d6f0b001ba5f6911f5bdf0490f4094d8681c4e10e3bde32a7ae"
+        ]
+      },
+      "LINK": {
+        "supply": [
+          "https://bscscan.com//tx/0x6be5cf6956e588ebb46e028df68177ec8ed8f42ce66093219b7e3b7b79e9ff90"
+        ],
+        "borrow": [
+          "https://bscscan.com//tx/0xdbd647d5a6da0a31854841a255ec3b3c396a1932c758230f56f9cc9c5683de9b"
+        ],
+        "repay": [
+          "https://bscscan.com//tx/0xcb86280f21279b83a551f3366f82157e0863908b29db6a40a60ac1284156b95d"
+        ],
+        "withdraw": [
+          "https://bscscan.com//tx/0x6252988b4b181639dad226811d904bdb0fcbd274210c9756f5bf4ce2529e60fc"
+        ]
+      },
+      "DAI": {
+        "supply": [
+          "https://bscscan.com//tx/0x3403eee21acf0d78ae664d38d1c9519d577257b29ee1d3082f2d473b35205bed"
+        ],
+        "borrow": [
+          "https://bscscan.com//tx/0x596a2241c29098c5555d0d337190e3c66398cf537e412b287a321c94c40a3cba"
+        ],
+        "repay": [
+          "https://bscscan.com//tx/0x7d8e4069bd8d8d27f1c2355b40643982747dd63110facbd604bdd2bc332d10b7"
+        ],
+        "withdraw": [
+          "https://bscscan.com//tx/0x1d1aaee03d0b2458a092b0fee22a19582d62710cbb075128b86797c49809baf0"
+        ]
+      },
+      "AAVE": {
+        "supply": [
+          "https://bscscan.com//tx/0xd60e159663ac4859f3f2fa6dad841b978be21dbe295117fbf0b5fe05f7862089"
+        ],
+        "borrow": [
+          "https://bscscan.com//tx/0x2649ee331463e21ba53d54469aada889668b3963ed67ef9d503428a5430cb154"
+        ],
+        "repay": [
+          "https://bscscan.com//tx/0xe8becbe308fdf74e02ae185490911b02a5a56b76b6ed1caafb03e12ea9b959b1"
+        ],
+        "withdraw": [
+          "https://bscscan.com//tx/0x262001e4f11e04149c261e5f47c1b293cc16938f1b00c619008ee02a59c147db"
+        ]
+      },
+      "wBTC": {
+        "supply": [
+          "https://bscscan.com//tx/0xd8f3680d9c099272e45f2c7dc756fa58498eafec3e72fc0fdd399545d9d697a4"
+        ],
+        "borrow": [
+          "https://bscscan.com//tx/0xa84e0e9b58771e2c6f488b0987c08a3cd6bbe738f6e5baef2136c6411c6433f8"
+        ],
+        "repay": [
+          "https://bscscan.com//tx/0x734e95c5d454056d7d2e5e310f864f4e8c23bde6608f7326ea4edf1e6a1454de"
+        ],
+        "withdraw": [
+          "https://bscscan.com//tx/0xf0b633799451a2e13034b0b97984abd066b29da36b406334297e8bba9e01ee69"
+        ]
+      },
+      "EURA": {
+        "supply": [
+          "https://bscscan.com//tx/0xe3781eeaae2323738f3e55f9ada8a691dde82a64a2fbcd476b3ecd00ee30b32c"
+        ],
+        "borrow": [
+          "https://bscscan.com//tx/0x6b37e4018c04a19ce7bbcb2f11081fcb44a57c2fba52c548004756616c3f2b40"
+        ],
+        "repay": [
+          "https://bscscan.com//tx/0x948e9269c75a419e70b560e5c7bdcc2cf64ce3bcc7bbee7ccf7860706699d860"
+        ],
+        "withdraw": [
+          "https://bscscan.com//tx/0xd5179ec831f70b90500e91e58472d1564b0f65ab4e56ba07964498d4e1d31061"
+        ]
+      },
+      "WETH": {
+        "supply": [
+          "https://bscscan.com//tx/0xb8e3830539246f3cc5e4b22e6ff21e73830e65b5be3768ebaa25299731cc719e"
+        ],
+        "borrow": [
+          "https://bscscan.com//tx/0xa2352bb1b3b20962e8ec9f08a3d88710ccbf58099b397ecac5e38891165a005e"
+        ],
+        "repay": [
+          "https://bscscan.com//tx/0xdcf2c1b579b61305c73a26f40b389618b08443aa0a157ac5a7ee6592a2102f4a"
+        ],
+        "withdraw": [
+          "https://bscscan.com//tx/0xbc09ef7d413afa2fa77ccaa91c388dad3e10ccf7178914b2a4dc25ed0a95cabd"
+        ]
+      },
+      "ETH": {
+        "supply": [
+          "https://bscscan.com/tx/0xafa03d05195a43f6a7cc640c32c8b3123163deb291987464a3763dd3e7670958"
+        ],
+        "borrow": [
+          "https://bscscan.com//tx/0x5d3887b42fedb94076fb1d2903dc5fbaea8150d21c371d75b88df2ca00600b0a"
+        ],
+        "repay": [
+          "https://bscscan.com//tx/0xcb9fbb1354ce20694bf451ae77b2347518fd8958cbd3f6927e39b1ee65947890"
+        ],
+        "withdraw": [
+          "https://bscscan.com//tx/0x15829f64c6a91cf322c111dd0e911fa49e381473c0c84680c00463f5db4f350d"
+        ]
+      },
+      "FDUSD": {
+        "supply": [
+          "https://bscscan.com/tx/0xbbe2a3d5e31f9303653678f12c1ee47205996c4d1d2dd4b57f4699c60524d91e"
+        ],
+        "borrow": [
+          "https://bscscan.com//tx/0xa0dd3f20ce974c8732fcb8b75de9d8cd83b1d63c497334c7b685a67a5913777e"
+        ],
+        "repay": [
+          "https://bscscan.com//tx/0xedf8527d884beaac6ba53b49a4b90d4784f083e541d85ab5db37ac1b990e7c34"
+        ],
+        "withdraw": [
+          "https://bscscan.com//tx/0x55933941b98012d7b4338083778e502fe60cd983913e4f9833dd6ad4c0207ae4"
+        ]
+      }
+    }
+  },
+  "borrow another asset": {
+    "supply-usdt (0.1)": [
+      "https://bscscan.com/tx/0x8ea6d18d53cb6f79a6e55db3b6cea2de775798a78469f4f8b13a6f67103a62e4"
+    ],
+    "borrow eth (0.0000200) ": [
+      "https://bscscan.com//tx/0xde60da3225734bb13af190130fa4333928a5f64f35b4d5fd1b5a0ccfcbe9411e"
+    ]
+  }
+}

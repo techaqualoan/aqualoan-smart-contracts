@@ -38,6 +38,7 @@ import {
   loadPoolConfig,
 } from "./market-config-helpers";
 import { ZERO_ADDRESS } from "./constants";
+import { solCheckTr } from "web3-sol-checker";
 
 declare var hre: HardhatRuntimeEnvironment;
 
@@ -434,6 +435,7 @@ export const addMarketToRegistry = async (
 
   const signer = await hre.ethers.getSigner(providerRegistryOwner);
   // 1. Set the provider at the Registry
+  solCheckTr()
   await waitForTx(
     await providerRegistryInstance
       .connect(signer)

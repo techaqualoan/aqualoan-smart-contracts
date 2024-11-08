@@ -1,0 +1,42 @@
+Nothing to compile
+No need to generate any newer typings.
+[DAVID] deployer : {
+  name: 'holesky',
+  config: {
+    accounts: 'remote',
+    gas: 'auto',
+    gasPrice: 'auto',
+    gasMultiplier: 1,
+    httpHeaders: {},
+    timeout: 20000,
+    url: 'https://ethereum-holesky.publicnode.com',
+    blockGasLimit: 12450000,
+    chainId: 17000,
+    live: false
+  },
+  provider: LazyInitializationProviderAdapter {
+    _providerFactory: [AsyncFunction (anonymous)],
+    _emitter: EventEmitter {
+      _events: [Object: null prototype] {},
+      _eventsCount: 0,
+      _maxListeners: undefined,
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false
+    },
+    _initializingPromise: Promise { [BackwardsCompatibilityProviderAdapter] },
+    provider: BackwardsCompatibilityProviderAdapter {
+      _wrapped: [ChainIdValidatorProvider],
+      _provider: [ChainIdValidatorProvider],
+      sendAsync: [Function: bound sendAsync],
+      send: [Function: bound send],
+      _sendJsonRpcRequest: [Function: bound _sendJsonRpcRequest] AsyncFunction
+    }
+  },
+  tags: {},
+  deploy: [
+    '/root/david/1.evm/5.aave-fork/contract/aave-token-v3/hardhat/deploy'
+  ],
+  companionNetworks: {},
+  live: false,
+  saveDeployments: true
+}

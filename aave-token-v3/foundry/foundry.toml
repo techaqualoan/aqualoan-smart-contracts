@@ -1,0 +1,19 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+remappings = [
+    'openzeppelin-contracts/=lib/openzeppelin-contracts/'
+]
+evm_version = "cancun"
+
+fs_permissions = [{access = "write", path = "./reports"}]
+
+[rpc_endpoints]
+mainnet = "${RPC_MAINNET}"
+holesky = "https://ethereum-holesky-rpc.publicnode.com"
+
+[etherscan]
+mainnet={key="${ETHERSCAN_API_KEY_MAINNET}",chainId=1}
+holesky = {key="${ETHERSCAN_API_KEY_MAINNET}",chainId=17000}
+# See more config options https://github.com/gakonst/foundry/tree/master/config

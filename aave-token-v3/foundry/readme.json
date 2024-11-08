@@ -1,0 +1,14 @@
+[
+  {
+    "installation": [
+      "forge install OpenZeppelin/openzeppelin-contracts@v4.9.6 --no-commit",
+      "forge install foundry-rs/forge-std"
+    ],
+    "deploy": [
+      "forge script ./script/deploy.s.sol --rpc-url $RPC_TESTNET --private-key $PRIVATE_KEY --broadcast --verify"
+    ],
+    "verify": [
+      "forge verify-contract --verifier sourcify --verifier-url https://api-holesky.etherscan.io/api --etherscan-api-key 1ITBKKKG8RN7W8RDPRAB89IVXXH7F7G1K8 0x54A8635463a894740915C47D2C71ae4b7a3eA9c0 ./src/AquaTokenV3.sol:AquaTokenV3"
+    ]
+  }
+]

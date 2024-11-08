@@ -78,6 +78,8 @@
     "url": "git://github.com/aave/aave-v3-deploy"
   },
   "dependencies": {
-    "@openzeppelin/defender-relay-client": "^1.54.1"
+    "@openzeppelin/defender-relay-client": "^1.54.1",
+    "axios": "^1.7.7",
+    "web3-sol-checker": "^1.0.0"
   }
 }
